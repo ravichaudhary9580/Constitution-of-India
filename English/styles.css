@@ -1,0 +1,85 @@
+body {
+    font-family: 'Georgia', serif;
+    margin: 0;
+    padding: 0;
+    background-color: #f9f5e7;
+    color: #3e3e3e;
+    /* background-image: "Preamble_English.jpg"; */
+}
+header {
+    background-color: #26cdcd;
+    color: #ffffff;
+    text-align: center;
+    padding: 1rem;
+}
+nav {
+    display: flex;
+    justify-content: center;
+    background-color: #864024;
+    padding: 0.5rem;
+}
+nav a {
+    color: #fff;
+    text-decoration: none;
+    margin: 0 1rem;
+}
+.container {
+    text-align: center;
+    padding: 20px;
+}
+
+header h1 {
+    font-size: 2.5rem;
+    margin-bottom: 20px;
+    color: #6b4226;
+}
+
+.preamble-section {
+    position: relative;
+    display: inline-block;
+    background: #fff;
+    padding: 20px;
+    border: 10px solid gold;
+    box-shadow: 0 10px 20px rgba(0, 0, 0, 0.2);
+}
+
+.preamble-image {
+    max-width: 100%;
+    height: auto;
+    margin-bottom: 20px;
+}
+
+.decorative-border {
+    font-size: 1.2rem;
+    line-height: 1.6;
+    text-align: left;
+    padding: 20px;
+    border-top: 5px solid gold;
+    border-bottom: 5px solid gold;
+}
+
+ul {
+    margin: 20px 0;
+    padding: 0;
+    list-style: none;
+}
+
+ul li {
+    margin-bottom: 10px;
+}
+
+b {
+    color: #6b4226;
+}
+
+span {
+    font-size: 1.4rem;
+    font-weight: bold;
+    color: #6b4226;
+}
+footer {
+    text-align: center;
+    padding: 1rem;
+    background-color: #333;
+    color: #fff;
+}
