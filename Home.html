@@ -1,24 +1,37 @@
 <!DOCTYPE html>
 <html lang="en">
+
 <head>
     <meta charset="UTF-8">
     <meta name="viewport" content="width=device-width, initial-scale=1.0">
     <title>Constitution of India</title>
     <link rel="stylesheet" href="Home.css">
     <link rel="stylesheet" href="https://cdnjs.cloudflare.com/ajax/libs/font-awesome/6.7.1/css/all.min.css" />
+    <link rel="preconnect" href="https://fonts.googleapis.com">
+<link rel="preconnect" href="https://fonts.gstatic.com" crossorigin>
+<link href="https://fonts.googleapis.com/css2?family=Foldit:wght@100..900&display=swap" rel="stylesheet">
+    <style>
+        .material-symbols-outlined {
+          font-variation-settings:
+          'FILL' 0,
+          'wght' 400,
+          'GRAD' 0,
+          'opsz' 24
+        }
+        </style>
 </head>
+
 <body>
     <header>
-        
         <div class="language-selector">
             <label for="language-select">Select Language:</label>
             <select id="language-select">
                 <option value="en">English</option>
-                <option value="hi">हिन्दी</option>
-                <option value="ur">اُردُ و</option>
-                <option value="hi">Tamil</option>
-                <option value="hi">Marathi</option>
-                <option value="hi">Gujrati</option>
+                <option value="hi">हिन्दी</option> <!-- Hindi -->
+                <option value="ur">اُردُ و</option><!-- Urdu -->
+                <option value="hi">Tamil</option><!-- Tamil -->
+                <option value="hi">Marathi</option><!-- Marathi -->
+                <option value="hi">Gujrati</option><!-- Gujrati -->
 
                 <!-- Add more language options as needed -->
             </select>
@@ -26,9 +39,11 @@
         <h1>Constitution of India</h1>
         <p>Your go-to resource for constitutional knowledge</p>
     </header>
+    
     <nav>
         <input type="checkbox" name="" id="check">
         <label for="check" id="checkbtn"><i class="fas fa-bars"></i></label>
+
         <ul>
             <li><a href="#home">Home</a></li>
             <li><a href="#preamble">Preamble</a></li>
@@ -38,11 +53,33 @@
             <li><a href="#about">About</a></li>
         </ul>
     </nav>
-  <div class="container">
-    
-  </div>
+    <div class="container">
+        <h1>Hey RAVI How Are you?</h1>
+    </div>
     <footer>
         © 2024 Constitution of India. All rights reserved.
     </footer>
+    <button type="button" class="menubtn">
+        <h3><strong>Part IXA: THE MUNICIPALITIES</strong></h3>
+    </button>
+    <div class="content">
+<p>Lorem ipsum dolor sit amet consectetur, adipisicing elit. Modi facere, asperiores mollitia maxime ex dolor eos officiis vitae, molestiae delectus voluptatibus incidunt. Nostrum eum aperiam, blanditiis commodi velit doloremque at ut reiciendis!</p>
+    </div>
 </body>
+<script>
+    var coll = document.getElementsByClassName("menubtn");
+    var i;
+
+    for (i = 0; i < coll.length; i++) {
+        coll[i].addEventListener("click", function () {
+            this.classList.toggle("active");
+            var content = this.nextElementSibling;
+            if (content.style.display === "block") {
+                content.style.display = "none";
+            } else {
+                content.style.display = "block";
+            }
+        });
+    }
+</script>
 </html>

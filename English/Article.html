@@ -4,48 +4,42 @@
 <head>
     <meta charset="UTF-8">
     <meta name="viewport" content="width=device-width, initial-scale=1.0">
-    <title>Constitution of India: Preamble and Parts I-III</title>
-    <link rel="stylesheet" href="styles.css">
-    <style>
-        /* button that is used to open and close the collapsible content */
-        .collapsible {
-            background-color: #eee;
-            color: #444;
-            cursor: pointer;
-            padding: 14px;
-            width: 100%;
-            border: none;
-            text-align: left;
-            outline: none;
-            font-size: 15px;
-        }
+    <title>Constitution of India:Parts I-XXII</title>
+    <link rel="stylesheet" href="Article.css">
+    <link rel="script" href="Article.js">
 
-        /* Adding a background color to the button if it is clicked on and when you move the mouse over it (hover) */
-        .active,
-        .collapsible:hover {
-            background-color: #ccc;
-        }
 
-        /* collapsible content. Note: hidden by default */
-        .content {
-            text-align: left;
-            padding: 0 18px;
-            display: none;
-            overflow: hidden;
-            background-color: #f1f1f1;
-        }
-    </style>
 </head>
 
 <body>
+    <header>
+
+
+
+    </header>
+    <div class="sidebar" id="sidebar">
+        <button class="close-btn" id="closeBtn">X</button>
+        <h2>Menu</h2>
+        <ul>
+            <li><a href="#home">Home</a></li>
+            <li><a href="#preamble">Preamble</a></li>
+            <li><a href="#articles">Articles</a></li>
+            <li><a href="#amendments">Amendments</a></li>
+            <li><a href="#Schedules">Schedules</a></li>
+            <li><a href="#about">About</a></li>
+        </ul>
+    </div>
+    <nav>
+        <div class="main-content">
+            <button class="open-btn" id="openBtn">☰ Menu</button>
+            <button id="parts-heading"><b>PARTS I to XXII</b></button>
+        </div>
+    </nav>
+
     <div class="container ">
-        <header>
-            <h1>Constitution of India</h1>
-            <h2>Parts I-XXII</h2>
-        </header>
         <main>
             <div class="container ">
-                    <!-- Part - I -->
+                <!-- Part - I -->
                 <!-- Articles 1 to 4 -->
                 <section id="part-i">
                     <button type="button" class="collapsible">
@@ -65,7 +59,7 @@
                     </div>
                 </section>
 
-                    <!-- Part - II -->
+                <!-- Part - II -->
                 <!-- Articles 5 to 11 -->
                 <section id="part-ii">
                     <button type="button" class="collapsible">
@@ -86,7 +80,7 @@
                     </div>
                 </section>
 
-                    <!-- Part - III -->
+                <!-- Part - III -->
                 <!-- Articles 12 to 35 -->
                 <section id="part-iii">
                     <button type="button" class="collapsible">
@@ -149,7 +143,7 @@
 
                 </section>
 
-                    <!-- Part - IV -->
+                <!-- Part - IV -->
                 <!-- Articles 36 to 51 -->
                 <section id="part-iv">
                     <button type="button" class="collapsible">
@@ -160,7 +154,7 @@
                     </div>
                 </section>
 
-                 <!-- Part - IVa -->
+                <!-- Part - IVa -->
                 <!-- Articles 51a -->
                 <section id="part-iva">
                     <button type="button" class="collapsible">
@@ -171,7 +165,7 @@
                     </div>
                 </section>
 
-                    <!-- Part - V -->
+                <!-- Part - V -->
                 <!-- Articles 52 to 151 -->
                 <section id="part-v">
                     <button type="button" class="collapsible">
@@ -182,7 +176,7 @@
                     </div>
                 </section>
 
-                    <!-- Part - VI -->
+                <!-- Part - VI -->
                 <!-- Articles 152 to 237 -->
                 <section id="part-vi">
                     <button type="button" class="collapsible">
@@ -193,7 +187,7 @@
                     </div>
                 </section>
 
-                    <!-- Part - VII -->
+                <!-- Part - VII -->
                 <!-- Articles 238 -->
                 <section id="part-vii">
                     <button type="button" class="collapsible">
@@ -204,7 +198,7 @@
                     </div>
                 </section>
 
-                    <!-- Part - VIII -->
+                <!-- Part - VIII -->
                 <!-- Articles 239 to 242 -->
                 <section id="part-viii">
                     <button type="button" class="collapsible">
@@ -215,7 +209,7 @@
                     </div>
                 </section>
 
-                    <!-- Part - IX -->
+                <!-- Part - IX -->
                 <!-- Articles 243 to 243q -->
                 <section id="part-ix">
                     <button type="button" class="collapsible">
@@ -226,7 +220,7 @@
                     </div>
                 </section>
 
-                        <!-- Part - IXa -->
+                <!-- Part - IXa -->
                 <!-- Articles 243p to 243zg -->
                 <section id="part-ixa">
                     <button type="button" class="collapsible">
@@ -237,7 +231,7 @@
                     </div>
                 </section>
 
-                        <!-- Part - IXb -->
+                <!-- Part - IXb -->
                 <!-- Articles 243zh to 243zt -->
                 <section id="part-ixb">
                     <button type="button" class="collapsible">
@@ -248,7 +242,7 @@
                     </div>
                 </section>
 
-                    <!-- Part - X -->
+                <!-- Part - X -->
                 <!-- Articles 244 to 244a -->
                 <section id="part-x">
                     <button type="button" class="collapsible">
@@ -259,12 +253,13 @@
                     </div>
                 </section>
 
-  
+
             </div>
         </main>
     </div>
 </body>
 <script>
+
     var coll = document.getElementsByClassName("collapsible");
     var i;
 
@@ -279,6 +274,18 @@
             }
         });
     }
+
+    const sidebar = document.getElementById('sidebar');
+    const openBtn = document.getElementById('openBtn');
+    const closeBtn = document.getElementById('closeBtn');
+
+    openBtn.addEventListener('click', () => {
+        sidebar.style.left = '0';
+    });
+
+    closeBtn.addEventListener('click', () => {
+        sidebar.style.left = '-250px';
+    });
 </script>
 
 </html>
