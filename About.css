@@ -1,0 +1,102 @@
+/* Reset default margin and padding */
+* {
+    margin: 0;
+    padding: 0;
+}
+
+/* India map image styling */
+.indiamap {
+    top: 0;
+    left: 0;
+    width: 100%;
+    height: 100%;
+    object-fit: cover;
+    z-index: -1;
+}
+
+/* Unity text styling */
+#unity {
+    position: absolute;
+    left: 50%;
+    top: 10%;
+    margin: 10px;
+    padding: 5px;
+    font-size: 300%;
+    color: black;
+    font-weight: bold;
+    font-family: 'Segoe UI', Tahoma, Verdana, sans-serif;
+}
+
+/* Info card styling */
+.info-card {
+    position: fixed;
+    background: rgb(255, 255, 255);
+    padding: 10px;
+    border-radius: 8px;
+    box-shadow: 0 4px 8px rgba(0, 0, 0, 0.1);
+    width: 150px;
+    display: none;
+    left: 50%;
+    top: 30%;
+}
+
+/* Info card image styling */
+.info-card img {
+    width: 100px;
+    height: 100px;
+    border-radius: 50%;
+    margin-bottom: 10px;
+}
+
+/* Info card heading styling */
+.info-card h3 {
+    margin: 5px 0;
+    color: #333;
+}
+
+/* Info card paragraph styling */
+.info-card p {
+    margin: 5px 0;
+    color: #666;
+}
+
+
+/* Table styling */
+.table {
+    border: "1";
+    border-color: rgb(33, 0, 245);
+    width: 50%;
+    text-align: left;
+    border-collapse: collapse;
+    text-align: center;
+    align-items: center;
+    align-content: center;
+}
+
+.table td:hover {
+    background-color: #d1d1d088;
+}
+
+.column1 {
+    text-align: left;
+    width: 40%;
+}
+
+@media (max-width: 767px) {
+    .table {
+        width: 100%;
+        /* Make the table take up more space on smaller screens */
+        font-size: 14px;
+        /* Adjust font size for better readability */
+    }
+
+    #unity {
+        top: 5%;
+        margin: 0px;
+        padding: 2px;
+        font-size: 20px;
+        color: black;
+        font-weight: bold;
+        font-family: 'Segoe UI', Tahoma, Verdana, sans-serif;
+    }
+}

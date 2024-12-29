@@ -1,0 +1,60 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Interactive Map with Image Coords</title>
+    <style>
+        .info-card {
+            position: absolute;
+            background-color: white;
+            border: 1px solid #ccc;
+            border-radius: 5px;
+            padding: 10px;
+            box-shadow: 0 4px 6px rgba(0, 0, 0, 0.1);
+            display: none;
+            z-index: 10;
+        }
+    </style>
+</head>
+<body>
+
+<div style="position: relative;">
+    <!-- The image -->
+    <img src="img/Map of India.png" alt="Map of India" usemap="#india-map" style="width: 100%;">
+
+    <!-- Info cards -->
+    <div id="info-uttar-pradesh" class="info-card" style="top: 200px; left: 300px;">
+        <strong>State: Uttar Pradesh</strong><br>
+        Creator: Ravi<br>
+        Population: ~200M
+    </div>
+    <div id="info-maharashtra" class="info-card" >
+        <strong>State: Maharashtra</strong><br>
+        Creator: Someone<br>
+        Population: ~125M
+    </div>
+</div>
+
+<!-- Image map -->
+<map name="india-map">
+    <area shape="rect" coords="100,100,200,200" alt="Uttar Pradesh" 
+          onmouseover="showCard('info-uttar-pradesh')" onmouseout="hideCard('info-uttar-pradesh')">
+    <area shape="rect" coords="300,300,400,400" alt="Maharashtra" 
+          onmouseover="showCard('info-maharashtra')" onmouseout="hideCard('info-maharashtra')">
+</map>
+
+<script>
+    // Show the card
+    function showCard(id) {
+        document.getElementById(id).style.display = 'block';
+    }
+
+    // Hide the card
+    function hideCard(id) {
+        document.getElementById(id).style.display = 'none';
+    }
+</script>
+
+</body>
+</html>
