@@ -17,14 +17,29 @@
 /* Unity text styling */
 #unity {
     position: absolute;
-    left: 50%;
+    left: 65%;
     top: 10%;
-    margin: 10px;
+    margin: 15px;
     padding: 5px;
     font-size: 300%;
     color: black;
     font-weight: bold;
     font-family: 'Segoe UI', Tahoma, Verdana, sans-serif;
+    transform: translateX(-50%);
+}
+
+@media (max-width: 767px) {
+    #unity {
+        font-size: 150%;
+        top: 5%;
+    }
+}
+
+@media (min-width: 1025px) {
+    #unity {
+        font-size: 300%;
+        top: 10%;
+    }
 }
 
 /* Info card styling */
@@ -83,20 +98,30 @@
 }
 
 @media (max-width: 767px) {
-    .table {
-        width: 100%;
-        /* Make the table take up more space on smaller screens */
-        font-size: 14px;
-        /* Adjust font size for better readability */
-    }
-
     #unity {
         top: 5%;
         margin: 0px;
         padding: 2px;
-        font-size: 20px;
+        font-size: 24px;
         color: black;
         font-weight: bold;
         font-family: 'Segoe UI', Tahoma, Verdana, sans-serif;
+    }
+}
+@media (max-width: 767px) {
+    .table {
+        width: 100%;
+    }
+}
+
+@media (min-width: 768px) and (max-width: 1024px) {
+    .table {
+        width: 75%;
+    }
+}
+
+@media (min-width: 1025px) {
+    .table {
+        width: 50%;
     }
 }
